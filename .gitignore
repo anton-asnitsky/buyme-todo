@@ -10,8 +10,8 @@ bower_components
 .DS_Store
 
 # compiled output
-/dist/
-/tmp/
+*/dist/
+*/tmp/
 
 # dependencies
 /bower_components/
