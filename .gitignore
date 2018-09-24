@@ -1,5 +1,5 @@
 vendor
-node_modules
+
 .idea
 !/mysql/storage
 /mysql/storage/*
@@ -8,3 +8,25 @@ node_modules
 bower_components
 /.vscode/
 .DS_Store
+
+# compiled output
+/dist/
+/tmp/
+
+# dependencies
+/bower_components/
+*/node_modules/
+
+# misc
+/.sass-cache
+/connect.lock
+/coverage/
+/libpeerconnection.log
+/npm-debug.log*
+/testem.log
+/yarn-error.log
+
+# ember-try
+/.node_modules.ember-try/
+/bower.json.ember-try
+/package.json.ember-try
