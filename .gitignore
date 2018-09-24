@@ -1,0 +1,10 @@
+vendor
+node_modules
+.idea
+!/mysql/storage
+/mysql/storage/*
+.vagrant
+.settings
+bower_components
+/.vscode/
+.DS_Store
