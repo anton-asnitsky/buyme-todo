@@ -1,5 +1,15 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-{{welcome-page}}
-{{!-- Feel free to remove this! --}}
-
-{{outlet}}
+<section class="container">
+  <section class="header">
+    {{#link-to "index"}}
+      <h1>
+        משימות
+      </h1>
+    {{/link-to}}
+    {{#link-to "create" class="menu-create"}}
+        הוסף משימה
+    {{/link-to}}
+  </section>
+  <section class="body">
+    {{outlet}}
+  </section>
+</section>

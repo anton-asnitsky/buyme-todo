@@ -1,0 +1,9 @@
+<h2>רשימת משימותБ.р2Ю</h2>
+{{#each model as |todo|}}
+  <article class="todo">
+    <h3 class="todo body {{ todo.done "overlined" "" }}">{{todo.body}}</h3>
+    <div class="todo state">
+      <input type="checkbox" disabled={{ todo.done }} >
+    </div>
+  </article>
+{{/each}}
