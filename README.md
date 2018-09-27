@@ -5,11 +5,11 @@ Server side based on Laravel 5.2 API and MySQL.
 
 ##Installation
 
-First, you need to clone byme-todo repository
+First, you need to clone byme-todo repository:
 
 >git clone git@github.com:anton-asnitsky/buyme-todo.git buyme
 
-After clining ends' enter buyme folder:
+After cloning ends, enter buyme folder:
 >cd buyme
 
 Now you need to install dependencies:
@@ -20,7 +20,8 @@ Now you need to install dependencies:
 >
 >cd ..
 
-Ok. We have depndncies for our API project. Now' move and install client dependncies:
+Ok. We have depndncies for our API project. Now, move and install client 
+dependncies:
 >cd buyme-todo
 
 >npm install
