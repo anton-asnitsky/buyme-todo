@@ -12,7 +12,7 @@ class TodoController extends Controller
     public function index()
     {
         header('Access-Control-Allow-Origin: *');
-        return response()->json(['todos' => Todo::all()]);
+        return response()->json(['todos' => Todo::orderBy('created_at', 'desc')->get()]);
     }
  
     public function show(Todo $todo)
@@ -22,7 +22,7 @@ class TodoController extends Controller
 
     public function store(Request $request)
     {
-        $todo = Todo::create($request->all());
+        $todo = Todo::create($request->todo);
 
         header('Access-Control-Allow-Origin: *');
         return response()->json(['todos' => $todo], 201);
@@ -30,7 +30,7 @@ class TodoController extends Controller
 
     public function update(Request $request, Todo $todo)
     {
-        $todo->update($request->all());
+        $todo->update($request->todo);
 
         header('Access-Control-Allow-Origin: *');
         return response()->json(['todos' => $todo], 200);

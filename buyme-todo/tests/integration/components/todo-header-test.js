@@ -3,22 +3,22 @@ import { setupRenderingTest } from 'ember-qunit';
 import { render } from '@ember/test-helpers';
 import hbs from 'htmlbars-inline-precompile';
 
-module('Integration | Component | todo-form', function(hooks) {
+module('Integration | Component | todo-header', function(hooks) {
   setupRenderingTest(hooks);
 
   test('it renders', async function(assert) {
     // Set any properties with this.set('myProperty', 'value');
     // Handle any actions with this.set('myAction', function(val) { ... });
 
-    await render(hbs`{{todo-form}}`);
+    await render(hbs`{{todo-header}}`);
 
     assert.equal(this.element.textContent.trim(), '');
 
     // Template block usage:
     await render(hbs`
-      {{#todo-form}}
+      {{#todo-header}}
         template block text
-      {{/todo-form}}
+      {{/todo-header}}
     `);
 
     assert.equal(this.element.textContent.trim(), 'template block text');

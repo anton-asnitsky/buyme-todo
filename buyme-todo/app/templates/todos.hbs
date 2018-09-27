@@ -1,6 +1,7 @@
-<h2>רשימת משימות</h2>
+{{#todo-header store=store}}
+{{/todo-header}}
 {{#each model as |todo|}}
-  {{#todo-item todo=todo }}
+  {{#todo-item todo=todo store=store }}
   {{/todo-item}}
 {{/each}}
 {{#todo-footer todos=model}}

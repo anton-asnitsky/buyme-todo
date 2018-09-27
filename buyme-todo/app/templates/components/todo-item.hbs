@@ -1,8 +1,8 @@
 <article class="todo">
     <div class="todo state">
-      <input type="checkbox" disabled={{ todo.done }} >
+      <input type="checkbox" disabled={{ todo.done }} {{action "toggleCheckBox" on="change"}} >
     </div>
-    {{#ember-inline-edit value=todo.body onSave=(action "onSave")  }}
+    {{#ember-inline-edit showSaveButton=false showCancelButton=false value=todo.body onSave=(action "onSave")  }}
     {{/ember-inline-edit}}
-    <button>Delete</button>
+    <button {{action "onDelete"}}>Delete</button>
   </article>
