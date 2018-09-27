@@ -4,7 +4,9 @@ This is a simple EmberJS based TODO manager.
 Server side based on Laravel 5.2 API and MySQL.
 
 ##Installation
-First' you need to clone byme-todo repository
+
+First, you need to clone byme-todo repository
+
 >git clone git@github.com:anton-asnitsky/buyme-todo.git buyme
 
 After clining ends' enter buyme folder:
