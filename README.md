@@ -42,7 +42,7 @@ If you want to init our DB with fake data:
 
 >cd ..
 
-Now we raedy to launch:
+Now we ready to launch:
 >docker-compose up
 
 ## Project access:
