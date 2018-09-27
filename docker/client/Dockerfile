@@ -24,7 +24,7 @@ RUN set -ex \
   && rm -rf /tmp/*
 
 EXPOSE 4200 35730
-ADD ./docker/client/development-entrypoint /usr/src/app/development-entrypoint
-RUN chmod +x /usr/src/app/development-entrypoint
+ADD ./buyme-api . 
+RUN npm install
 
 CMD ["ember", "server", "--live-reload-port", "35730"]

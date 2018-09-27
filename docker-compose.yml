@@ -39,7 +39,6 @@ services:
           context: .
           dockerfile: docker/client/Dockerfile
         command: ember server --live-reload-port 35730
-        entrypoint: /usr/src/app/development-entrypoint
         volumes:
           - ./buyme-todo:/usr/src/app
         stdin_open: true
