@@ -2,6 +2,7 @@ vendor
 
 .idea
 !/mysql/storage
+!/mysql/storage/.empty
 /mysql/storage/*
 .vagrant
 .settings
