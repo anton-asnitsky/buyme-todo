@@ -1,0 +1,27 @@
+.header{
+  direction: rtl;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding:10px;
+  background: rgb(224,181,99);
+  background: linear-gradient(180deg, rgba(224,181,99,1) 0%, rgba(212,137,41,1) 100%);
+  box-shadow: 0 8px 6px -6px black;
+  h1{
+    font-size: 20px;
+  }
+
+  span{
+    background: rgb(223,216,216);
+    background: linear-gradient(180deg, rgba(223,216,216,1) 0%, rgba(166,177,184,1) 100%);
+    width: 27px;
+    height: 25px;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 5px;
+    cursor: pointer;
+
+  }
+}

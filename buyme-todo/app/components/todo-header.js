@@ -1,4 +1,5 @@
 import Component from '@ember/component';
+import Ember from 'ember';
 
 export default Component.extend({
   actions:{
@@ -10,8 +11,6 @@ export default Component.extend({
         created_at: Date.now(),
         updated_at:   Date.now()
       });
-
-      todo.save();
     }
   }
 });

@@ -1,0 +1,14 @@
+@import './todo-footer-total.scss';
+@import './todo-footer-todo.scss';
+@import './todo-footer-done.scss';
+
+.footer{
+  height: 20px;
+  direction: rtl;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin-top: 10px;
+}

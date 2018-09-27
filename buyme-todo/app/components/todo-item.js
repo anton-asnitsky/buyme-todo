@@ -7,7 +7,6 @@ export default Component.extend({
       let todo = this.get('todo');
 
       store.findRecord('todo', todo.id).then(function(todo) {
-        console.log(!todo.done);
         todo.set('done', !todo.done);
         todo.save();
       });

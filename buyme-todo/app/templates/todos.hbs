@@ -1,7 +1,7 @@
-{{#todo-header store=store}}
+{{#todo-header router=router store=store}}
 {{/todo-header}}
-{{#each model as |todo|}}
-  {{#todo-item todo=todo store=store }}
+{{#each model as |todo index|}}
+  {{#todo-item index=index todo=todo store=store }}
   {{/todo-item}}
 {{/each}}
 {{#todo-footer todos=model}}

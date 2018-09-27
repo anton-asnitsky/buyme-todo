@@ -1,8 +1,17 @@
-<article class="todo">
-    <div class="todo state">
-      <input type="checkbox" disabled={{ todo.done }} {{action "toggleCheckBox" on="change"}} >
-    </div>
-    {{#ember-inline-edit showSaveButton=false showCancelButton=false value=todo.body onSave=(action "onSave")  }}
-    {{/ember-inline-edit}}
-    <button {{action "onDelete"}}>Delete</button>
-  </article>
+<article class="todo {{even-odd index}} {{if todo.done "overlined" ""}}">
+  <div class="state">
+    <input
+      type="checkbox"
+      checked={{todo.done}}
+      disabled={{ todo.done }} {{action "toggleCheckBox" on="change"}}
+    >
+  </div>
+  {{#ember-inline-edit
+    showSaveButton=false
+    showCancelButton=false
+    value=todo.body
+    onSave=(action "onSave")
+  }}
+  {{/ember-inline-edit}}
+  <button class="close" {{action "onDelete"}}><span aria-hidden="true">&times;</span></button>
+</article>

@@ -34,3 +34,18 @@ services:
             - "3306:3306"
         volumes:
             - ./mysql/storage:/var/lib/mysql
+    client:
+        build:
+          context: .
+          dockerfile: docker/client/Dockerfile
+        command: ember server --live-reload-port 35730
+        entrypoint: /usr/src/app/development-entrypoint
+        volumes:
+          - ./buyme-todo:/usr/src/app
+        stdin_open: true
+        tty: true
+        ports:
+          - 4200:4200
+          - 35730:35730
+        environment:
+          SOME_URL: http://localhost:4200

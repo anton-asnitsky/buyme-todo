@@ -1,0 +1,36 @@
+.todo{
+  direction: rtl;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+  margin: 0;
+  padding: 5px;
+  &.even{
+    background-color: #f3f6e3;
+  }
+  &.odd{
+    background-color: white;
+  }
+  &.overlined{
+    text-decoration: line-through;
+  }
+  .state{
+    display: inline-block;
+    width: 25px;
+    text-align: right;
+  }
+  .ember-inline-edit{
+    display: inline-block;
+    width: 100%;
+    padding-right: 5px;
+
+    .ember-inline-editable{
+      width: 100%;
+      text-align: right;
+    }
+  }
+  .close {
+    display: inline-block;
+  }
+}
