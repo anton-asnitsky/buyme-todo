@@ -24,7 +24,7 @@ RUN set -ex \
   && rm -rf /tmp/*
 
 EXPOSE 4200 35730
-
-RUN chmod +x development-entrypoint
+ADD ./docker/client/development-entrypoint /usr/src/appevelopment-entrypoint
+RUN chmod +x /usr/src/appdevelopment-entrypoint
 
 CMD ["ember", "server", "--live-reload-port", "35730"]
